@@ -1,0 +1,13 @@
+﻿@model MvcApplication4.Models.Category
+
+@{
+    ViewBag.Title = "Browse";
+}
+
+<h2>Browsing Category: @Model.Name</h2>
+<ul> @foreach (var note in Model.Notes)
+{
+<li> @note.Title
+</li>
+}
+</ul>
